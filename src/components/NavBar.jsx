@@ -16,6 +16,9 @@ const NavBar = () => {
           <Link to='/form'>
             <p>Form</p>
           </Link>
+          <Link to='/components'>
+            <p>Components</p>
+          </Link>
         </div>
       </div>
     </Fragment>
