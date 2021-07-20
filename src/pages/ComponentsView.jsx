@@ -88,6 +88,7 @@ const ComponentsView = () => {
               offWeight={offWeight}
               border={border}
               textColor={textColor}
+              name='Preview'
             />
           }
         />

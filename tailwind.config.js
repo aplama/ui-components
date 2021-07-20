@@ -17,6 +17,10 @@ module.exports = {
       colors: {
         teal: colors.teal,
         sky: colors.sky,
+        trueGray: colors.trueGray,
+      },
+      zIndex: {
+        "-1": "-1",
       },
     },
   },
@@ -26,5 +30,5 @@ module.exports = {
       backgroundImage: ["hover", "focus", "active"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
 };

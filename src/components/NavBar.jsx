@@ -19,6 +19,9 @@ const NavBar = () => {
           <Link to='/components'>
             <p>Components</p>
           </Link>
+          <Link to='/twform'>
+            <p>TWForm</p>
+          </Link>
         </div>
       </div>
     </Fragment>

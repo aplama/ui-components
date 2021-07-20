@@ -4,7 +4,7 @@ import tick from "../assets/tick.svg";
 export const PostCard = (props) => {
   const image = ["nature,architecture,sea"];
   return (
-    <div className='flex flex-col bg-gray-50 rounded-md shadow-md mx-4 my-4 '>
+    <div className='flex flex-col bg-gray-50 rounded-md shadow-md mx-4 my-4 max-w-sm'>
       <div className='flex flex-col items-center px-2 md:w-11/12 mx-auto'>
         <div className='-mt-2 md:-mt-4  rounded-md shadow-lg'>
           <img
