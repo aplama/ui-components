@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -13,9 +14,11 @@ export default function Hero() {
             Create resume and CV in minutes.
           </h3>
 
-          <button className='bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase my-8'>
-            Get Started
-          </button>
+          <Link to='/resume'>
+            <button className='bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase my-8'>
+              Get Started
+            </button>
+          </Link>
         </div>
       </div>
     </div>

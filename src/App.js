@@ -1,5 +1,10 @@
-import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  useLocation,
+  withRouter,
+} from "react-router-dom";
 // import Features from "./components/comp2/Features";
 // import Footer from "./components/comp2/Footer";
 // import Hero from "./components/comp2/Hero";
@@ -20,22 +25,34 @@ import Blog2 from "./pages/pages2/Blog2";
 import Login from "./pages/pages2/Login";
 import Register from "./pages/pages2/Register";
 
+function _ScrollToTop(props) {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return props.children;
+}
+const ScrollToTop = withRouter(_ScrollToTop);
+
 function App() {
   return (
     <Router>
-      <Nav />
+      <ScrollToTop>
+        <Nav />
+        <Route exact path='/' component={Home2} />
+        <Route exact path='/faq' component={FAQ} />
+        <Route exact path='/resume' component={Resume} />
+        <Route exact path='/cv' component={CV} />
+        <Route exact path='/blog' component={Blog2} />
+        <Route exact path='/login' component={Login} />
+        <Route exact path='/register' component={Register} />
+      </ScrollToTop>
 
       {/* <Hero />
       <Features />
       <Pricing />
       <Footer /> */}
-      <Route exact path='/' component={Home2} />
-      <Route exact path='/faq' component={FAQ} />
-      <Route exact path='/resume' component={Resume} />
-      <Route exact path='/cv' component={CV} />
-      <Route exact path='/blog' component={Blog2} />
-      <Route exact path='/login' component={Login} />
-      <Route exact path='/register' component={Register} />
+
       {/* <NavBar />
 
       <Route exact path='/' component={Home} />
