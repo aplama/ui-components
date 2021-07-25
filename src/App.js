@@ -24,6 +24,7 @@ import CV from "./pages/pages2/CV";
 import Blog2 from "./pages/pages2/Blog2";
 import Login from "./pages/pages2/Login";
 import Register from "./pages/pages2/Register";
+import PreStep from "./pages/pages2/PreStep";
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
@@ -46,6 +47,7 @@ function App() {
         <Route exact path='/blog' component={Blog2} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/register' component={Register} />
+        <Route exact path='/prestep' component={PreStep} />
       </ScrollToTop>
 
       {/* <Hero />

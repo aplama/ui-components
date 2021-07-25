@@ -12,6 +12,17 @@ code {
     monospace;
 } */
 /* ./src/index.css */
+/* html,
+body {
+  margin: 0px 0px 0px 0px;
+  min-height: 100vh;
+  padding: 0px 0px 0px 0px;
+}
+h1,
+p {
+  margin: 0 0 1em;
+} */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -33,7 +44,7 @@ input[type="radio"],
 select,
 select[multiple],
 textarea {
-  @apply placeholder-trueGray-300 focus:ring-blue-400 focus-within:ring-0;
+  @apply placeholder-gray-300 focus:border-blue-300 focus-within:ring-0 border-gray-300;
 }
 
 .btn {

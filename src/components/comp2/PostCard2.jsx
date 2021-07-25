@@ -9,22 +9,19 @@ export default function PostCard2({ title, body, user, image }) {
         {/* <img src='https://picsum.photos/100' alt='random' /> */}
 
         <div className='flex flex-col'>
-          <div className='mb-2 md:mb-4 text-xs md:text-sm text-trueGray-700'>
-            <Username user={user ? user : "Guest"} />
-          </div>
-
           <Link>
-            <h1 className='hover:underline text-sm md:text-2xl leading-tight font-serif font-bold mb-2 mr-2 capitalize'>
+            <h1 className='hover:underline text-base md:text-2xl leading-tight font-serif font-bold mb-2 mr-2 capitalize'>
               {title}
             </h1>
           </Link>
           <p className='hidden md:flex text-trueGray-700 font-serif'>
             {body}...
           </p>
-          <div className='mt-2 md:mt-4 text-xs text-trueGray-500'>
-            Posted 1/2/2021
+          <div className=' mt-1 md:mt-4 text-xs md:text-sm text-trueGray-700'>
+            <Username user={user ? user : "Guest"} />
           </div>
-          <div className='hidden md:flex flex-wrap pt-2 md:pt-6 text-trueGray-500 text-xs md:text-sm mr-2 '>
+          <div className='mt-1 text-xs text-trueGray-500'>Posted 1/2/2021</div>
+          <div className='hidden md:flex flex-wrap pt-4 text-trueGray-500 text-xs md:text-sm mr-2 '>
             <div className='rounded-full border px-2 py-2 mr-2'>React</div>
             <div className='rounded-full border px-2 py-2 mr-2'>JavaScript</div>
             <div className='rounded-full border px-2 py-2 mr-2'>

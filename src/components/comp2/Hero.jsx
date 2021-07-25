@@ -14,7 +14,7 @@ export default function Hero() {
             Create resume and CV in minutes.
           </h3>
 
-          <Link to='/resume'>
+          <Link to='/prestep'>
             <button className='bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase my-8'>
               Get Started
             </button>

@@ -3,7 +3,7 @@ import { posts } from "../../data/posts";
 
 import plus from "../../assets/plus.svg";
 import loupe from "../../assets/loupe.svg";
-import arrow from "../../assets/next.svg";
+// import arrow from "../../assets/next.svg"
 
 import PostCard2 from "../../components/comp2/PostCard2";
 // import { PostCard } from "../../components/PostCard";
@@ -28,8 +28,8 @@ export default function Blog2() {
             Search
           </button>
         </div>
-        <div className=' flex justify-end mb-8 pt-6'>
-          <button className=' py-2 px-4 mr-2 md:mr-16 outline-none focus:outline-none flex flex-row items-center hover:underline'>
+        <div className='  flex justify-end mt-8'>
+          <button className='  py-2 px-4 mr-2 md:mr-16 outline-none focus:outline-none flex flex-row items-center hover:underline'>
             <img src={plus} alt='add' className='w-6 mr-2' />
             Add Post
           </button>
